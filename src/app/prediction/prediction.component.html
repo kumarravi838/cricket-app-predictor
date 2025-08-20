@@ -1,0 +1,22 @@
+<div class="prediction-container">
+    <h2>Top 11 Players Prediction for Next Match</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Player Name</th>
+          <th>Predicted Runs</th>
+          <th>Predicted Wickets</th>
+          <th>Predicted Strike Rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let player of topPlayers">
+          <td>{{ player.name }}</td>
+          <td>{{ player.predictedRuns | number:'1.0-2' }}</td>
+          <td>{{ player.predictedWickets | number:'1.0-0' }}</td>
+          <td>{{ player.predictedStrikeRate | number:'1.0-2' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
